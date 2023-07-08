@@ -1,4 +1,4 @@
-name: Deploy to production
+name: Build and push
 
 on:
   push:
@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
-    name: Build image
+  build:
+    name: Build and push docker image
     runs-on: ubuntu-latest
 
     steps:
